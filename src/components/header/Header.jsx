@@ -3,9 +3,12 @@ import styles from './Header.module.css'
 import logo from '../../assets/photos/Logo.png'
 import Menu from '../menu/Menu'
 
-export default function Header() {
+export default function Header({header = 'fixedHeader'}) {
+  const defaultHeader = () =>{
+    return header === 'fixedHeader' ? styles.fixedHeader : styles.relativeHeader  
+  }
   return (
-    <header className={styles.header}>
+    <header className={defaultHeader()}>
       <div className={styles.logo}>
         <img src={logo} alt="" />
       </div>

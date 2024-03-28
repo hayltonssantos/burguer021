@@ -25,6 +25,8 @@ li {
 li a {
   color: aliceblue;
   text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
 
 li:first-child {

@@ -7,7 +7,7 @@ import Bottom from '../../components/bottom/Bottom'
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.homeBody}>
       <Header/>
       <div className={styles.home}>
         <div  className={styles.title}>
@@ -22,6 +22,6 @@ export default function Home() {
         </div>
       </div>
       <Bottom/>
-    </>
+    </div>
   )
 }

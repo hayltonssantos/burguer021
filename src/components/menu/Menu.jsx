@@ -5,13 +5,13 @@ export default function Menu(){
   return(
     <ul className={styles.ul}>
       <li className={styles.li}>
-        <a href="" className={styles.a}>Order online</a>
+        <a href="/foods" className={styles.a}>Order online</a>
       </li>
       <li className={styles.li}>
-        <a href="" className={styles.a}>Home</a>
+        <a href="/home" className={styles.a}>Home</a>
       </li>
       <li className={styles.li}>
-        <a href="" className={styles.a}>Foods</a>
+        <a href="/foods" className={styles.a}>Foods</a>
       </li>
       <li className={styles.li}>
         <a href="" className={styles.a}>Map</a>

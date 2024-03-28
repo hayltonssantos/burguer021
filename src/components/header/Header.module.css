@@ -1,5 +1,21 @@
-.header {
+.fixedHeader {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  font-family: var(--font);
+  font-size: 20px;
+}
+
+.relativeHeader{
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -22,8 +38,8 @@
 }
 
 .logo img {
-  width: 180px;
-  height: 150px;
+  width: 200px;
+  height: 180px;
 }
 
 .menu {
@@ -44,7 +60,7 @@
 
 .text .call {
   color: rgb(169, 57, 1);
-  font-size: 1.5em; /* Ajuste para tornar o tamanho do texto mais responsivo */
+  font-size: 1.1em; /* Ajuste para tornar o tamanho do texto mais responsivo */
   font-weight: bolder;
   width: 100%;
 }
@@ -52,10 +68,11 @@
 .text .number {
   font-size: 1.5em; /* Ajuste para tornar o tamanho do texto mais responsivo */
   font-weight: bold;
+  letter-spacing: 5px;
 }
 
 /* Regra de mídia para dispositivos com largura máxima de 768 pixels (tipicamente dispositivos móveis) */
-@media (max-width: 300px){
+@media (max-width: 375px){
   .text{
     display: none;
   }
@@ -75,7 +92,8 @@
   }
   
   .logo {
-    margin-bottom: 10px;
+    width: 160px;
+    height: 180px;
   }
   
   .text {
