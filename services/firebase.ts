@@ -11,7 +11,7 @@ const firebaseConfig = {
   authDomain: "burguerhouse-78fdf.firebaseapp.com",
   projectId: "burguerhouse-78fdf",
   storageBucket: "burguerhouse-78fdf.appspot.com",
-  messagingSenderId: "503732480439",
+  messagingSenderId: "503732480439", 
   appId: "1:503732480439:web:fc7e2f4fbc00c02d18a032",
   measurementId: "G-2FQMEBCJ3V"
 };
